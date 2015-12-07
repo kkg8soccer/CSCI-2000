@@ -21,6 +21,4 @@ Then it takes the values from halo.dat and puts in a vector v_halo and calculate
 The histogram then plots the data from v_halo. 
 NOTE: The files needed for this question is in Large_Data.
 
-
-
-
+Note I got help from my fellow peers for this assignment to understand what was needed to be outputted.
