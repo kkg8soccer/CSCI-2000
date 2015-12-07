@@ -18,7 +18,8 @@ Then I saved the new edited spreadsheet as a .csv file.
 For Question 3:
 4.data_process.ipynb This ones takes the halo.dat file and reads the first line into N_halo, the second line into T_halo and the rest of the lines into data_halo.
 Then it takes the values from halo.dat and puts in a vector v_halo and calculates the speed from the given data.
-The histogram then plots the data from v_halo.
+The histogram then plots the data from v_halo. 
+NOTE: The files needed for this question is in Large_Data.
 
 
 
