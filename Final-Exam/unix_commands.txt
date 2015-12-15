@@ -4,9 +4,11 @@ Katherine Koehler-Grassau (100559637)
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
- 
+$tail -n +2 > classlist # This parts takes every line except the first two and puts it into the file called classlist
+$cat classlist # The function of cat is to print the file contents to the screen 
 
-
+# This shows the contents of class list except for the first two lines (the headers to the screen) 
+# you would use the tail function and cat
 
 # part (b)
 # How would you construct a pipeline using the command from part (a)
@@ -14,8 +16,12 @@ Katherine Koehler-Grassau (100559637)
 # Enter the relevant Unix command(s) used below as well as the number
 # of students in the list.
 
-
-
+tail -n +2 | classlist | wc -l  
+#wc -l is used to count the amount of lines in a file. 
+# the tail part takes away the first two lines and it's output goes to the file class list 
+# Then the classlist output is sent to wc -l which reads the amount of lines
+# The amount of lines outputted is the number of students since 1 student per line.
+# you could use cat to show the output to the screen 
 
 # part (c)
 # How would you sort the list by the second column (i.e., by
@@ -25,7 +31,12 @@ Katherine Koehler-Grassau (100559637)
 # Enter the relevant Unix command(s) used below as well as the names
 # of the first and last students in the new list.
 
-
+# to sort this you would use the sort command
+# you would use -d which considers the alphanumeric characters meaning it would help to put it in alphabetical order
+# then you would find a way to make the sort command look only at the column with the first names which then sorts them by alphabetical order
+#The results would be:
+#Adam Holte would be at the top of the list
+#Xavier Almy would be at the bottom of the list
 
 
 # part (d)
@@ -35,7 +46,9 @@ Katherine Koehler-Grassau (100559637)
 # Enter the relevant name(s) and the Unix command(s) below.
 
 
-
+$ uniq -c firstname # uniq c finds lines that have duplicates so it will show where the names are repeated
+$ cut -c  firstname # cut -c selects only the characters that are found duplicates by uniq
+$ grep -w firstname # grep can then be used to search the file and for all the names that are the same, which ever ones were duplicates
 
 # part (f) [BONUS]
 # Construct a Unix pipeline that extracts the last three digits of
