@@ -1,9 +1,10 @@
-
+Katherine Koehler-Grassau (100559637)
 # part (a)
 # How would you print the file classlist.csv to the screen
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
+ 
 
 
 
